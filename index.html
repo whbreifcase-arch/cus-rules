@@ -544,7 +544,7 @@ const CINEMA = {
     </div>
   </section>
   <div class="verb-rules">MOST ACTIONS COST <span class="gold">1 AP</span>&nbsp;&nbsp;·&nbsp;&nbsp;ONE ATTACK PER ACTIVATION&nbsp;&nbsp;·&nbsp;&nbsp;MOVE BEFORE OR AFTER ATTACKING&nbsp;&nbsp;·&nbsp;&nbsp;READY ENDS THE ACTIVATION</div>
-  <div class="verb-sub">AP IS ON THE CARD — MOST FIGURES <span class="gold">2</span> · CHAMPIONS <span class="gold">3</span></div>
+  <div class="verb-sub">AP BY BASE — CIRCLE <span class="gold">3</span> · SQUARE <span class="gold">2</span></div>
 
   <!-- ================= MAIN GRID ================= -->
   <div class="main">
@@ -560,9 +560,9 @@ const CINEMA = {
           <circle cx="38" cy="40" r="20.5" fill="none" stroke="#c9c9c9" stroke-width="1.4"/>
         </svg>
         <div>
-          <div class="base-name">CIRCLE — HERO</div>
-          <div class="base-rule serif">Never tests Nerve.</div>
-          <div class="base-micro">leaders &amp; specialists</div>
+          <div class="base-name">CIRCLE — HIGHER AGENCY · 3 AP</div>
+          <div class="base-rule serif">No flank, no backstab.</div>
+          <div class="base-micro">each extra attacker adds dice · never routs</div>
         </div>
       </div>
 
@@ -573,9 +573,9 @@ const CINEMA = {
           <rect x="17.5" y="19.5" width="41" height="41" rx="2" fill="none" stroke="#c9c9c9" stroke-width="1.4"/>
         </svg>
         <div>
-          <div class="base-name">SQUARE — CREW</div>
-          <div class="base-rule serif">Can break.</div>
-          <div class="base-micro">tests Nerve when triggered</div>
+          <div class="base-name">SQUARE — LOWER AGENCY · 2 AP</div>
+          <div class="base-rule serif">Orientation matters as much as position.</div>
+          <div class="base-micro">not the hero — stick with your mates &amp; do your job</div>
         </div>
       </div>
 
@@ -588,12 +588,12 @@ const CINEMA = {
         </svg>
         <div>
           <div class="base-name">ELONGATED — MOUNTED</div>
-          <div class="base-rule serif">Plows one class up.</div>
+          <div class="base-rule serif">Plows one size up.</div>
           <div class="base-micro">square = cavalry · oval = mounted hero</div>
         </div>
       </div>
 
-      <div class="subhead">SIZE IS CLASS — ROUND OR SQUARE</div>
+      <div class="subhead">SIZE — SMALL TO MONSTROUS</div>
       <svg width="100%" viewBox="0 0 250 108" xmlns="http://www.w3.org/2000/svg" style="font-family:Helvetica,Arial,sans-serif; max-width:270px; display:block; margin:0 auto">
         <rect x="10" y="56" width="22" height="22" rx="2" fill="#ffffff" stroke="#101010" stroke-width="1.8"/>
         <rect x="58" y="50" width="28" height="28" rx="2" fill="#ffffff" stroke="#101010" stroke-width="1.8"/>
@@ -614,7 +614,7 @@ const CINEMA = {
       <div>
         <div class="sizerule"><span class="sname">SMALL</span><span class="sdo">SLIPS THROUGH</span></div>
         <div class="sizerule"><span class="sname">LARGE</span><span class="sdo">PLOWS</span></div>
-        <div class="sizerule"><span class="sname">MOUNTED</span><span class="sdo">PLOWS ONE CLASS UP</span></div>
+        <div class="sizerule"><span class="sname">MOUNTED</span><span class="sdo">PLOWS ONE SIZE UP</span></div>
         <div class="sizerule"><span class="sname">MONSTROUS</span><span class="sdo">ONLY WALLS STOP IT</span></div>
       </div>
     </aside>
@@ -624,48 +624,58 @@ const CINEMA = {
       <div class="center-head serif">THE ATTACK</div>
       <div class="center-sub">EVERY STRIKE RESOLVES THE SAME WAY</div>
       <div class="flow-wrap">
-      <svg width="400" height="546" viewBox="0 0 400 546" xmlns="http://www.w3.org/2000/svg" style="font-family:Helvetica,Arial,sans-serif">
+      <svg width="400" height="610" viewBox="0 0 400 610" xmlns="http://www.w3.org/2000/svg" style="font-family:Helvetica,Arial,sans-serif">
         <defs>
           <marker id="fl-ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
             <path d="M0 0 L10 5 L0 10 Z" fill="#9a7317"/>
           </marker>
         </defs>
 
-        <rect x="40" y="6" width="320" height="52" rx="10" fill="#ffffff" stroke="#101010" stroke-width="2"/>
-        <text x="200" y="28" text-anchor="middle" font-size="14.5" font-weight="700" letter-spacing="1.5" fill="#101010">ROLL DICE</text>
-        <text x="200" y="44" text-anchor="middle" font-size="11.5" font-weight="700" letter-spacing="1" fill="#4a4a4a">WEAPON DICE ± POSITION</text>
+        <text x="200" y="15" text-anchor="middle" font-size="12.5" font-weight="700" letter-spacing="2" fill="#9a7317">PLAYER A &#183; THE ATTACKER</text>
+        <line x1="40" y1="22" x2="360" y2="22" stroke="#9a7317" stroke-width="1"/>
 
-        <rect x="40" y="82" width="320" height="52" rx="10" fill="#ffffff" stroke="#101010" stroke-width="2"/>
-        <text x="200" y="104" text-anchor="middle" font-size="14.5" font-weight="700" letter-spacing="1.5" fill="#101010">COUNT SUCCESSES</text>
-        <text x="200" y="120" text-anchor="middle" font-size="11.5" font-weight="700" letter-spacing="1" fill="#4a4a4a">EACH DIE MEETING HIT</text>
+        <rect x="40" y="30" width="320" height="52" rx="10" fill="#ffffff" stroke="#101010" stroke-width="2"/>
+        <text x="200" y="52" text-anchor="middle" font-size="14.5" font-weight="700" letter-spacing="1.5" fill="#101010">DECLARE</text>
+        <text x="200" y="70" text-anchor="middle" font-size="11.5" font-weight="700" letter-spacing="1" fill="#4a4a4a">WHO YOU HIT + WITH WHAT</text>
 
-        <rect x="40" y="158" width="320" height="52" rx="10" fill="#ffffff" stroke="#101010" stroke-width="2"/>
-        <text x="200" y="180" text-anchor="middle" font-size="14.5" font-weight="700" letter-spacing="1.5" fill="#101010">READ TIERS</text>
-        <text x="200" y="196" text-anchor="middle" font-size="11.5" font-weight="700" letter-spacing="1" fill="#4a4a4a">BEST WOUND + ALL EFFECTS</text>
+        <rect x="40" y="100" width="320" height="52" rx="10" fill="#ffffff" stroke="#101010" stroke-width="2"/>
+        <text x="200" y="122" text-anchor="middle" font-size="14.5" font-weight="700" letter-spacing="1.5" fill="#101010">ROLL DICE</text>
+        <text x="200" y="140" text-anchor="middle" font-size="11.5" font-weight="700" letter-spacing="1" fill="#4a4a4a">WEAPON DICE &#177; POSITION</text>
 
-        <rect x="40" y="234" width="320" height="52" rx="10" fill="#ffffff" stroke="#101010" stroke-width="2"/>
-        <text x="200" y="256" text-anchor="middle" font-size="14.5" font-weight="700" letter-spacing="1.5" fill="#101010">ROLL ARMOUR</text>
-        <text x="200" y="272" text-anchor="middle" font-size="11.5" font-weight="700" letter-spacing="1" fill="#4a4a4a">ONE SAVE PER WOUND</text>
+        <rect x="40" y="170" width="320" height="52" rx="10" fill="#ffffff" stroke="#101010" stroke-width="2"/>
+        <text x="200" y="192" text-anchor="middle" font-size="14.5" font-weight="700" letter-spacing="1.5" fill="#101010">COUNT SUCCESSES</text>
+        <text x="200" y="210" text-anchor="middle" font-size="11.5" font-weight="700" letter-spacing="1" fill="#4a4a4a">DICE &#8805; YOUR HIT (&#177;X)</text>
 
-        <rect x="40" y="310" width="320" height="52" rx="10" fill="#ffffff" stroke="#101010" stroke-width="2"/>
-        <text x="200" y="332" text-anchor="middle" font-size="14.5" font-weight="700" letter-spacing="1.5" fill="#101010">APPLY WOUNDS</text>
-        <text x="200" y="348" text-anchor="middle" font-size="11.5" font-weight="700" letter-spacing="1" fill="#4a4a4a">FINE <tspan fill="#9a7317">→</tspan> HURT <tspan fill="#9a7317">→</tspan> <tspan fill="#a12d22">KO</tspan> <tspan fill="#9a7317">→</tspan> <tspan fill="#a12d22">DEAD</tspan></text>
+        <rect x="40" y="240" width="320" height="52" rx="10" fill="#ffffff" stroke="#101010" stroke-width="2"/>
+        <text x="200" y="262" text-anchor="middle" font-size="14.5" font-weight="700" letter-spacing="1.5" fill="#101010">READ WEAPON PACKET</text>
+        <text x="200" y="280" text-anchor="middle" font-size="11.5" font-weight="700" letter-spacing="1" fill="#4a4a4a">BEST WOUND + ALL EFFECTS</text>
 
-        <rect x="40" y="386" width="320" height="66" rx="10" fill="#ffffff" stroke="#101010" stroke-width="2"/>
-        <text x="200" y="408" text-anchor="middle" font-size="14.5" font-weight="700" letter-spacing="1.5" fill="#101010">COUNTER</text>
-        <text x="200" y="426" text-anchor="middle" font-size="11.5" font-weight="700" letter-spacing="1" fill="#4a4a4a">BASES TOUCHING?</text>
-        <text x="200" y="441" text-anchor="middle" font-size="11.5" font-weight="700" letter-spacing="1" fill="#4a4a4a">YES → STRIKE BACK&nbsp;&nbsp;·&nbsp;&nbsp;NO → CONTINUE</text>
+        <text x="200" y="325" text-anchor="middle" font-size="12.5" font-weight="700" letter-spacing="2" fill="#9a7317">PLAYER B &#183; THE DEFENDER</text>
+        <line x1="40" y1="332" x2="360" y2="332" stroke="#9a7317" stroke-width="1"/>
 
-        <rect x="40" y="476" width="320" height="56" rx="10" fill="#ffffff" stroke="#101010" stroke-width="2"/>
-        <text x="200" y="499" text-anchor="middle" font-size="14.5" font-weight="700" letter-spacing="1.2" fill="#101010">WHEN TRIGGERED: TEST NERVE</text>
-        <text x="200" y="516" text-anchor="middle" font-size="11.5" font-weight="700" letter-spacing="1" fill="#4a4a4a">SQUARES ONLY · CIRCLES NEVER TEST</text>
+        <rect x="40" y="340" width="320" height="52" rx="10" fill="#ffffff" stroke="#101010" stroke-width="2"/>
+        <text x="200" y="362" text-anchor="middle" font-size="14.5" font-weight="700" letter-spacing="1.5" fill="#101010">ROLL ARMOUR</text>
+        <text x="200" y="380" text-anchor="middle" font-size="11.5" font-weight="700" letter-spacing="1" fill="#4a4a4a">ONE SAVE PER WOUND &#183; IF ANY</text>
 
-        <line x1="200" y1="58"  x2="200" y2="78"  stroke="#9a7317" stroke-width="2.2" marker-end="url(#fl-ah)"/>
-        <line x1="200" y1="134" x2="200" y2="154" stroke="#9a7317" stroke-width="2.2" marker-end="url(#fl-ah)"/>
-        <line x1="200" y1="210" x2="200" y2="230" stroke="#9a7317" stroke-width="2.2" marker-end="url(#fl-ah)"/>
-        <line x1="200" y1="286" x2="200" y2="306" stroke="#9a7317" stroke-width="2.2" marker-end="url(#fl-ah)"/>
-        <line x1="200" y1="362" x2="200" y2="382" stroke="#9a7317" stroke-width="2.2" marker-end="url(#fl-ah)"/>
-        <line x1="200" y1="452" x2="200" y2="472" stroke="#9a7317" stroke-width="2.2" marker-end="url(#fl-ah)"/>
+        <rect x="40" y="410" width="320" height="52" rx="10" fill="#ffffff" stroke="#101010" stroke-width="2"/>
+        <text x="200" y="432" text-anchor="middle" font-size="14.5" font-weight="700" letter-spacing="1.5" fill="#101010">APPLY WOUNDS</text>
+        <text x="200" y="450" text-anchor="middle" font-size="11.5" font-weight="700" letter-spacing="1" fill="#4a4a4a">FINE <tspan fill="#9a7317">&#8594;</tspan> HURT <tspan fill="#9a7317">&#8594;</tspan> <tspan fill="#a12d22">KO</tspan> <tspan fill="#9a7317">&#8594;</tspan> <tspan fill="#a12d22">DEAD</tspan></text>
+
+        <rect x="40" y="480" width="320" height="52" rx="10" fill="#ffffff" stroke="#101010" stroke-width="2"/>
+        <text x="200" y="502" text-anchor="middle" font-size="14.5" font-weight="700" letter-spacing="1.5" fill="#101010">COUNTER</text>
+        <text x="200" y="520" text-anchor="middle" font-size="11.5" font-weight="700" letter-spacing="1" fill="#4a4a4a">BASES TOUCH &#8594; STRIKE BACK IF ABLE</text>
+
+        <rect x="40" y="550" width="320" height="52" rx="10" fill="#ffffff" stroke="#101010" stroke-width="2"/>
+        <text x="200" y="572" text-anchor="middle" font-size="14.5" font-weight="700" letter-spacing="1.5" fill="#101010">RESOLVE EFFECTS</text>
+        <text x="200" y="590" text-anchor="middle" font-size="11.5" font-weight="700" letter-spacing="1" fill="#4a4a4a">ATTACKER'S EXTRA EFFECTS</text>
+
+        <line x1="200" y1="84"  x2="200" y2="98"  stroke="#9a7317" stroke-width="2.2" marker-end="url(#fl-ah)"/>
+        <line x1="200" y1="154" x2="200" y2="168" stroke="#9a7317" stroke-width="2.2" marker-end="url(#fl-ah)"/>
+        <line x1="200" y1="224" x2="200" y2="238" stroke="#9a7317" stroke-width="2.2" marker-end="url(#fl-ah)"/>
+        <line x1="200" y1="294" x2="200" y2="311" stroke="#9a7317" stroke-width="2.2" marker-end="url(#fl-ah)"/>
+        <line x1="200" y1="394" x2="200" y2="408" stroke="#9a7317" stroke-width="2.2" marker-end="url(#fl-ah)"/>
+        <line x1="200" y1="464" x2="200" y2="478" stroke="#9a7317" stroke-width="2.2" marker-end="url(#fl-ah)"/>
+        <line x1="200" y1="534" x2="200" y2="548" stroke="#9a7317" stroke-width="2.2" marker-end="url(#fl-ah)"/>
       </svg>
       </div>
 
@@ -854,7 +864,7 @@ const CINEMA = {
           </svg>
           <div class="cine"><div class="cine-inner"><span class="cine-k">CINEMATIC PLATE</span><span class="cine-name serif">“THE MOB”</span><span class="cine-hint">art pending — set CINEMA.mob</span></div></div>
         </div>
-        <figcaption><b>MOB RULE — ARMOUR ONE STEP WORSE</b>circle engaged by 2+ · 4+ becomes 5+</figcaption>
+        <figcaption><b>MOB RULE — EXTRA ATTACKERS ADD DICE</b>a circle has no flanks — numbers are how you crack it</figcaption>
       </figure>
 
       <div class="aphorism">“Squares fear angles; circles fear numbers.”</div>
